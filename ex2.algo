@@ -1,0 +1,18 @@
+ALGORITHM card_sort
+VAR
+    i, j, card, n: Integer
+BEGIN
+    n := arr.length    
+
+    FOR i FROM 1 TO n-1 DO
+        card := arr[i]   
+        j := i - 1         
+    
+        WHILE j >= 0 AND arr[j] > card DO
+            arr[j + 1] := arr[j]  
+            j := j - 1        
+        END_WHILE
+        
+        arr[j + 1] := card
+    END_FOR
+END

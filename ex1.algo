@@ -1,0 +1,27 @@
+ALGORITHM Sentence analyse
+VAR
+    len; nw; nv: Integer;
+    char: charachter;
+    sent: string;
+    vowel: char; 
+BEGIN
+    
+    len:= 0;
+    nw:= 0;
+    nv:= 0;
+    sent := this is a sentence as a test.
+    vowels:  {"a", "e", "i", "o", "u", "A", "E", "I", "O", "U" };
+
+    for char in sent do
+    if char  !=  “.” so 
+    len := len+1 ;
+    end_if 
+    if char = “ ”
+    nw := nw + 1 ; 
+    end_if 
+
+    if char in vowels then 
+    nv := nv + 1 ;        
+
+    print (len; nw ; nv)s
+END
